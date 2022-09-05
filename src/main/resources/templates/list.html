@@ -1,5 +1,11 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" lang="ru">
+<head>
+    <title th:text="${appName}"></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
 <div class="container">
     <h1 th:text="${appName}" style="color: green">Default app name</h1>
     <hr/>
@@ -20,10 +26,5 @@
         </div>
     </div>
 </div>
-<body>
-<script>
-    const a = document.getElementById('1');
-    a.textContent = 'Amogus';
-</script>
 </body>
 </html>
